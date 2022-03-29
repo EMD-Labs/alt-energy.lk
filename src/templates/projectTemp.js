@@ -39,7 +39,7 @@ const ProjectTemplate = ({ data }) => {
                   </p>
                   <p>
                     <span>Email : </span>
-                    {email}
+                    <a href={`mailto:${email}`}>{email}</a>
                   </p>
                 </div>
                 <div></div>
