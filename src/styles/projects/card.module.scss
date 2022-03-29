@@ -1,0 +1,29 @@
+@import "../global.scss";
+
+.card {
+  color: #000;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+  .imgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      border-radius: 10px;
+    }
+  }
+  .title {
+    padding: 10px;
+    text-align: center;
+    h3 {
+      text-transform: capitalize;
+      font-size: 25px;
+    }
+  }
+}

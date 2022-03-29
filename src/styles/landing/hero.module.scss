@@ -1,0 +1,56 @@
+@import "../global.scss";
+
+.hero {
+  height: 100vh;
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+
+    .text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 80px;
+        text-transform: capitalize;
+        letter-spacing: 5px;
+        color: #fff;
+        font-weight: 500;
+        @include md {
+          font-size: 60px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .btn {
+      margin-top: 15px;
+      button {
+        border: 1px solid #fff;
+        padding: 15px 35px;
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #000;
+          color: $theme;
+          border: 1px solid #303030;
+        }
+      }
+    }
+  }
+}

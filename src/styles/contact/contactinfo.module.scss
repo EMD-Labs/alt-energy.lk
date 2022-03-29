@@ -1,0 +1,36 @@
+@import "../global.scss";
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  .iconContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    svg {
+      color: $theme;
+      height: 35px;
+      width: 35px;
+    }
+  }
+  .content {
+    flex-grow: 1;
+    color: #000;
+    h4 {
+      text-transform: capitalize;
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

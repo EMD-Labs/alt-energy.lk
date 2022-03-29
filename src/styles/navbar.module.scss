@@ -1,0 +1,55 @@
+@import "./global.scss";
+
+.navbar {
+  height: 60px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+  .logo {
+    h2 {
+      color: red;
+    }
+  }
+  .navlinks {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin: 0 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+        a {
+          color: #000;
+          &:hover {
+            color: $theme;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    button {
+      padding: 10px 40px;
+      background-color: $theme;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 17px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #f27420;
+        box-shadow: 0 0 3px #000;
+      }
+    }
+  }
+}
