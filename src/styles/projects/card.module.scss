@@ -8,7 +8,8 @@
   box-shadow: 0 0 5px #000;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
+    box-shadow: 0 0 8px #000;
   }
   .imgBox {
     display: flex;
@@ -24,6 +25,9 @@
     h3 {
       text-transform: capitalize;
       font-size: 25px;
+    }
+    p {
+      text-align: left;
     }
   }
 }

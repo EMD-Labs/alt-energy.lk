@@ -27,6 +27,9 @@
       @include md {
         width: 100%;
       }
+      @include sd {
+        padding: 10px;
+      }
       .header {
         position: relative;
         @include sd {

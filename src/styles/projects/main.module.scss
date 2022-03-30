@@ -13,6 +13,17 @@
     text-align: center;
     margin-top: 10px;
   }
+  .dropdownCntr {
+    span {
+      margin-left: 30px;
+      margin-bottom: 2px;
+    }
+  }
+  .dropdown {
+    width: 200px;
+    margin-left: 30px;
+  }
+
   .container {
     max-width: 1200px;
     display: flex;

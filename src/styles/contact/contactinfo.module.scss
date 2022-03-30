@@ -11,7 +11,7 @@
   margin: 0 10px;
   @include sd {
     padding: 10px;
-    margin: 5px 0;
+    margin: 2px 0;
   }
   .iconContainer {
     width: 40px;
@@ -33,9 +33,15 @@
       text-transform: capitalize;
       font-size: 20px;
       margin-bottom: 2px;
+      @include sd {
+        font-size: 18px;
+      }
     }
     p {
       font-size: 18px;
+      @include sd {
+        font-size: 17px;
+      }
     }
   }
 }
