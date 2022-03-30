@@ -30,6 +30,9 @@
           font-size: 60px;
           letter-spacing: 1px;
         }
+        @include sd {
+          font-size: 35px;
+        }
       }
     }
     .btn {

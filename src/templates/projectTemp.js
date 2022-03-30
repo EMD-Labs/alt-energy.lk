@@ -5,7 +5,7 @@ import * as styles from "../styles/templates/productTemp.module.scss"
 import ImgCarousel from "../components/common/ImgCarousel"
 
 const ProjectTemplate = ({ data }) => {
-  const { email, name, phone, slug, title } = data.markdownRemark.frontmatter
+  const { email, name, phone, title } = data.markdownRemark.frontmatter
   console.log(data)
   return (
     <Layout>

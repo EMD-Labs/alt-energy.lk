@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const ImgCarousel = ({images}) => {
 console.log(images);
   return (
-    <Carousel thumbWidth={60} showThumbs={true}>
+    <Carousel showThumbs={true} autoPlay>
         {
             images.map((img,index)=><div key={index}>
                 <GatsbyImage image={img.childrenImageSharp[0].gatsbyImageData}/>
