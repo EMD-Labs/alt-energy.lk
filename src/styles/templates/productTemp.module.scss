@@ -1,9 +1,9 @@
 @import "../global.scss";
 
 .main {
-  background-image: url("/images/aboutbg.jpg");
-  background-size: 50px 50px;
-  background-repeat: repeat;
+  // background-image: url("/images/aboutbg.jpg");
+  // background-size: 50px 50px;
+  // background-repeat: repeat;
   min-height: 100vh;
   padding-top: 60px;
   .header {
@@ -22,19 +22,17 @@
       padding: 10px 45px;
       border-radius: 15px;
       margin-bottom: 15px;
-      border: 3px solid #707070;
+      border: 3px solid $theme;
     }
   }
   .container {
-    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     .content {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      max-width: 1200px;
       height: 100%;
       @include md {
         flex-direction: column;
@@ -42,7 +40,7 @@
       .left {
         width: 50%;
         height: 100%;
-        padding: 15px;
+        margin: 10px;
         @include md {
           width: 100%;
         }
@@ -50,7 +48,10 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 15px;
+          border: 2px solid $theme;
+          @include md {
+            margin-right: 10px;
+          }
         }
       }
       .right {
@@ -60,8 +61,8 @@
           width: 100%;
         }
         .textContent {
-          padding: 15px;
-          border: 2px solid #fff;
+          padding: 10px;
+          border: 1px solid $theme;
           border-radius: 7px;
           margin-bottom: 10px;
           color: #000;
@@ -69,7 +70,7 @@
           margin: 10px;
 
           p {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 400;
             @include sd {
               font-size: 17px;
