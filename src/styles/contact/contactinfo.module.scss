@@ -8,7 +8,7 @@
   background-color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
-  margin: 0 10px;
+
   @include sd {
     padding: 10px;
     margin: 2px 0;
@@ -33,14 +33,14 @@
       text-transform: capitalize;
       font-size: 20px;
       margin-bottom: 2px;
-      @include sd {
-        font-size: 18px;
+      @include md {
+        font-size: 15px;
       }
     }
     p {
       font-size: 18px;
-      @include sd {
-        font-size: 17px;
+      @include md {
+        font-size: 14px;
       }
     }
   }

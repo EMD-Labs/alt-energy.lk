@@ -16,7 +16,7 @@
   .dropdownCntr {
     span {
       margin-left: 30px;
-      margin-bottom: 2px;
+      margin-bottom: 5px;
       color: #000;
     }
   }
@@ -26,12 +26,12 @@
   }
 
   .container {
-    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
     .grid {
+      max-width: 1200px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 10px;

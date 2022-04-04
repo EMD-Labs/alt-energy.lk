@@ -7,6 +7,9 @@
   background-image: url("/images/aboutbg.jpg");
   background-size: 50px 50px;
   background-repeat: repeat;
+  @include sd {
+    height: 80vh;
+  }
   .container {
     max-width: 1200px;
     height: 100%;
@@ -45,7 +48,7 @@
         transition: all 0.3s ease;
         cursor: pointer;
         @include md {
-          font-size: 25px;
+          font-size: 22px;
         }
         @include sd {
           font-size: 20px;
@@ -61,7 +64,7 @@
       margin-bottom: 15px;
       p {
         font-size: 30px;
-        @include sd {
+        @include md {
           font-size: 20px;
         }
       }
@@ -70,6 +73,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 15px;
+      @include md {
+        padding: 10px;
+        grid-gap: 5px;
+      }
       @include sd {
         grid-template-columns: 1fr;
         padding: 10px;

@@ -3,12 +3,11 @@
 .card {
   color: #000;
   background-color: #e4e4e4;
-  padding: 10px 5px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 5px;
   box-shadow: 0 0 5px #000;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.01);
     box-shadow: 0 0 8px #000;
   }
   .imgBox {
@@ -16,7 +15,7 @@
     align-items: center;
     justify-content: center;
     img {
-      border-radius: 10px;
+      border-radius: 5px;
     }
   }
   .title {
@@ -25,6 +24,10 @@
     h3 {
       text-transform: capitalize;
       font-size: 20px;
+      margin-bottom: 5px;
+      &:hover {
+        color: $theme;
+      }
     }
     p {
       text-align: left;

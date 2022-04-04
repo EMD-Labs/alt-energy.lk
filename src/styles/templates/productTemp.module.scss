@@ -48,7 +48,6 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 2px solid $theme;
           @include md {
             margin-right: 10px;
           }
@@ -61,16 +60,14 @@
           width: 100%;
         }
         .textContent {
-          padding: 10px;
-          border: 1px solid $theme;
           border-radius: 7px;
           margin-bottom: 10px;
-          color: #000;
+          color: #303030;
           margin-top: 0;
           margin: 10px;
 
           p {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: 400;
             @include sd {
               font-size: 17px;
@@ -95,7 +92,7 @@
             }
             p {
               color: #000;
-              font-size: 20px;
+              font-size: 18px;
               font-weight: 300;
               margin: 0 10px;
               @include sd {
@@ -103,7 +100,7 @@
                 font-weight: 300;
               }
               span {
-                font-size: 20px;
+                font-size: 19px;
                 font-weight: 500;
                 @include sd {
                   font-size: 17px;
