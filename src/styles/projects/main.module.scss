@@ -1,6 +1,7 @@
 @import "../global.scss";
 .main {
   min-height: 100vh;
+  background-image: $gradient;
   padding-top: 60px;
   .header {
     text-transform: uppercase;

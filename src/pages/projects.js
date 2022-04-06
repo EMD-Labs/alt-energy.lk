@@ -3,6 +3,7 @@ import Layout from "../components/common/Layout"
 import { graphql, Link } from "gatsby"
 import Card from "../components/projects/Card"
 import * as styles from "../styles/projects/main.module.scss"
+import Head from "../components/common/Head"
 import Dropdown from "react-dropdown"
 import "react-dropdown/style.css"
 
@@ -20,7 +21,6 @@ const Projects = ({ data }) => {
   ]
 
   const [province, setProvince] = useState(provinces[0])
-  console.log(province)
 
   const nodes = data.allMarkdownRemark.nodes
   const filteredNodes = nodes.filter(
@@ -28,6 +28,7 @@ const Projects = ({ data }) => {
   )
   return (
     <Layout>
+      <Head title="PROJECTS" description="alternative energy projects" />
       <div className={styles.main}>
         <div className={styles.header}>
           <h2>energy projects</h2>

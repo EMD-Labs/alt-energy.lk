@@ -3,12 +3,14 @@ import Layout from "../components/common/Layout"
 import { graphql } from "gatsby"
 import * as styles from "../styles/templates/productTemp.module.scss"
 import ImgCarousel from "../components/common/ImgCarousel"
+import Head from "../components/common/Head"
 
 const ProjectTemplate = ({ data }) => {
-  const { email, name, phone, title } = data.markdownRemark.frontmatter
-  console.log(data)
+  const { email, name, phone, title, description } =
+    data.markdownRemark.frontmatter
   return (
     <Layout>
+      <Head title={title} description={description} />
       <div className={styles.main}>
         <div className={styles.header}>
           <h2>{title}</h2>
